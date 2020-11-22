@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:ns="http://www.example.org/#">
+  <ns:Person rdf:about="http://www.example.org/#john">
+    <ns:hasMother rdf:resource="http://www.example.org/#susan" />
+    <ns:hasFather>
+      <rdf:Description rdf:about="http://www.example.org/#richard">
+        <ns:hasBrother rdf:resource="http://www.example.org/#luke" />
+      </rdf:Description>
+    </ns:hasFather>
+  </ns:Person>
+</rdf:RDF>
